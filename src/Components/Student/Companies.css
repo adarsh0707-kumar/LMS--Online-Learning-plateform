@@ -1,0 +1,51 @@
+/* style.css */
+
+/* Container for the entire component */
+.companies-container {
+  padding-top: 4rem;
+  /* Equivalent to Tailwind's pt-16 */
+}
+
+/* Text styling */
+.companies-text {
+  font-size: 1rem;
+  /* Equivalent to Tailwind's text-base */
+  color: #6b7280;
+  /* Equivalent to Tailwind's text-gray-500 */
+}
+
+/* Container for logos */
+.companies-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  /* Equivalent to Tailwind's gap-6 */
+  margin-top: 1.25rem;
+  /* Equivalent to Tailwind's mt-5 */
+}
+
+/* For medium screens and above */
+@media (min-width: 768px) {
+  .companies-logos {
+    gap: 4rem;
+    /* Equivalent to Tailwind's md:gap-16 */
+    margin-top: 2.5rem;
+    /* Equivalent to Tailwind's md:mt-10 */
+  }
+}
+
+/* Logo styling */
+.company-logo {
+  width: 5rem;
+  /* Equivalent to Tailwind's w-20 */
+}
+
+/* For medium screens and above */
+@media (min-width: 768px) {
+  .company-logo {
+    width: 7rem;
+    /* Equivalent to Tailwind's md:w-28 */
+  }
+}

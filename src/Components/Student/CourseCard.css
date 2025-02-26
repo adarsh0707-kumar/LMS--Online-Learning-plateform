@@ -1,0 +1,83 @@
+/* CourseCard.css */
+
+/* Course card container */
+.course-card {
+  border: 1px solid rgba(107, 114, 128, 0.3);
+  /* Equivalent to Tailwind's border border-gray-500/30 */
+  padding-bottom: 1.5rem;
+  /* Equivalent to Tailwind's pb-6 */
+  overflow: hidden;
+  border-radius: 0.5rem;
+  /* Equivalent to Tailwind's rounded-lg */
+  text-decoration: none;
+  /* Remove underline from Link */
+  color: inherit;
+  /* Inherit text color */
+  display: block;
+  /* Ensure Link behaves as a block element */
+}
+
+/* Course thumbnail image */
+.course-thumbnail {
+  width: 100%;
+  /* Equivalent to Tailwind's w-full */
+}
+
+/* Course details container */
+.course-details {
+  padding: 0.75rem;
+  /* Equivalent to Tailwind's p-3 */
+  text-align: left;
+  /* Equivalent to Tailwind's text-left */
+}
+
+/* Course title */
+.course-title {
+  font-size: 1rem;
+  /* Equivalent to Tailwind's text-base */
+  font-weight: 600;
+  /* Equivalent to Tailwind's font-semibold */
+}
+
+/* Educator name */
+.educator-name {
+  color: #6b7280;
+  /* Equivalent to Tailwind's text-gray-500 */
+}
+
+/* Rating container */
+.rating-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* Equivalent to Tailwind's space-x-2 */
+}
+
+/* Stars container */
+.stars {
+  display: flex;
+}
+
+/* Individual star */
+.star {
+  width: 0.875rem;
+  /* Equivalent to Tailwind's w-3.5 */
+  height: 0.875rem;
+  /* Equivalent to Tailwind's h-3.5 */
+}
+
+/* Rating count */
+.rating-count {
+  color: #6b7280;
+  /* Equivalent to Tailwind's text-gray-500 */
+}
+
+/* Course price */
+.course-price {
+  font-size: 1rem;
+  /* Equivalent to Tailwind's text-base */
+  font-weight: 600;
+  /* Equivalent to Tailwind's font-semibold */
+  color: #1f2937;
+  /* Equivalent to Tailwind's text-gray-800 */
+}
