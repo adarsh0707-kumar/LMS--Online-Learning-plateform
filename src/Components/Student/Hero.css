@@ -1,0 +1,83 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 5rem;
+  /* Equivalent to pt-20 */
+  padding-left: 1.75rem;
+  /* Equivalent to px-7 */
+  padding-right: 1.75rem;
+  /* Equivalent to px-7 */
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(0, 255, 255, 0.7), transparent);
+  /* Equivalent to bg-gradient-to-b from-cyan-100/70 */
+  space-y: 1.75rem;
+  /* Equivalent to space-y-7 */
+}
+
+.hero-title {
+  font-size: 2.125rem;
+  /* Equivalent to text-[34px] */
+  font-weight: 700;
+  /* Equivalent to font-bold */
+  color: #2d3748;
+  /* Equivalent to text-gray-800 */
+  width: 100%;
+  max-width: 1000px;
+  /* Equivalent to max-w-10x1 */
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero-title .highlighted-text {
+  color: #2563eb;
+  /* Equivalent to text-blue-600 */
+}
+
+.hero-image {
+  display: none;
+  position: absolute;
+  bottom: -1.75rem;
+  right: 0;
+}
+
+.hero-description {
+  color: #6b7280;
+  /* Equivalent to text-gray-500 */
+  max-width: 42rem;
+  /* Equivalent to max-w-2xl */
+  margin: 0 auto;
+}
+
+.hero-description.desktop {
+  display: block;
+  /* Show on desktop */
+}
+
+.hero-description.mobile {
+  display: none;
+  /* Hide on desktop */
+}
+
+@media (min-width: 768px) {
+  .hero-description.mobile {
+    display: block;
+    /* Show on mobile */
+  }
+
+  .hero-description.desktop {
+    display: none;
+    /* Hide on mobile */
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+    /* Equivalent to md:text-[56px] */
+  }
+
+  .hero-image {
+    display: block;
+  }
+}

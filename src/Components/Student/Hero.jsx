@@ -1,28 +1,28 @@
 import { assets } from "../../assets/assets";
 import SearchBar from "./SearchBar";
-
+import './Hero.css'
 
 const Hero = () => {
   return (
-    <div
-      className="flex flex-col items-center justify-center w-full md:pt-36 pt-20 px-7 md:px-0 space-y-7 text-center bg-gradient-to-b from-cyan-100/70">
-
-      <h1 className="md:text-[56px] text-[34px] relative w-full md:w-3/4 lg:w-1/2 font-bold text-gray-800 max-w-10x1 mx-auto"> Empower your future with the courses designed to <span className="text-blue-600">fit your choise.</span>  <img src={assets.sketch} alt="sketch" className="md:block hidden absolute -bottom-7 right-0" />  </h1>
-
-      <p
-        className="md:block hidden text-gray-500 max-w-2xl mx-auto">
+    <div className="hero-container">
+      <h1 className="hero-title">
+        Empower your future with the courses designed to
+        <span className="highlighted-text"> fit your choice.</span>
+        <img
+          src={assets.sketch}
+          alt="sketch"
+          className="hero-image"
+        />
+      </h1>
+      <p className="hero-description desktop">
         We bring together world-class instructors, interactive content, and a supportive community to help you achieve your personal and professional goals.
       </p>
-
-      <p
-        className="md:hidden text-gray-500 max-w-sm mx-auto">
+      <p className="hero-description mobile">
         We bring together world-class instructors to help you achieve your professional goals.
-      </p>      
-
+      </p>
       <SearchBar />
-      
     </div>
-  )
-}
+  );
+};
 
 export default Hero;

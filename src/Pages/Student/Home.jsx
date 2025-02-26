@@ -1,19 +1,17 @@
-import Companies from "../../Components/Student/Companies"
-import CoursesSection from "../../Components/Student/CoursesSection"
-import Hero from "../../Components/Student/Hero"
+import Companies from "../../Components/Student/Companies";
+import CoursesSection from "../../Components/Student/CoursesSection";
+import Hero from "../../Components/Student/Hero";
+import './Home.css';
 
 
 const Home = () => {
   return (
-    <div
-      className="flex flex-col items-center space-y-7 text-center">
-      
+    <div className="home-container">
       <Hero />
       <Companies />
       <CoursesSection />
-
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

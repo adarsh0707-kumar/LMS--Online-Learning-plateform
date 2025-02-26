@@ -1,0 +1,21 @@
+/* Home Container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 0;
+  /* Default margin */
+  margin-bottom: 0;
+  /* Remove any default margin */
+  gap: 1.75rem;
+  /* Equivalent to space-y-7 */
+}
+
+/* For larger screens, you may want to adjust the spacing and center content */
+@media (min-width: 768px) {
+  .home-container {
+    gap: 2rem;
+    /* Adjust gap for larger screens if needed */
+  }
+}
