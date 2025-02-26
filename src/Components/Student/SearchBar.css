@@ -33,6 +33,7 @@
   /* Padding to give space after the icon */
   font-size: 1rem;
   /* Font size for the input */
+  border: none;
 }
 
 /* Search Button */
@@ -47,6 +48,7 @@
   margin-left: 0.25rem;
   /* Equivalent to mx-1 */
   cursor: pointer;
+  border: none;
 }
 
 /* Media Query for Larger Screens */

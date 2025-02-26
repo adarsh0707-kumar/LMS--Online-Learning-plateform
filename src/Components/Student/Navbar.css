@@ -71,6 +71,7 @@
   border-radius: 9999px;
   /* Equivalent to rounded-full */
   cursor: pointer;
+  border: none;
 }
 
 /* Mobile Navbar */
