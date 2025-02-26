@@ -8,7 +8,7 @@ import { AppContext } from "../../Context/AppContext";
 
 const Navbar = () => {
 
-  const { navigate } = useContext(AppContext);
+  const { navigate, isEducator } = useContext(AppContext);
 
 
   const location = useLocation();
@@ -35,7 +35,16 @@ const Navbar = () => {
         <div className="navbar-links">
           {user && (
             <>
-              <button className="navbar-button">Become Educator</button>
+              <button
+                onClick={
+                  () => {
+                    navigate('/educator');
+                  }
+                }
+                className="navbar-button">
+              { isEducator ? 'Educator Dashboard' : 'Become Educator' }
+              </button>
+
               <span>|</span>
               <Link to={"/my-enrollments"} className="navbar-link">
                 My Enrollments
@@ -63,7 +72,16 @@ const Navbar = () => {
         <>
           {user && (
             <>
-              <button className="navbar-button">Become Educator</button>
+              <button
+                onClick={
+                  () => {
+                    navigate('/educator');
+                  }
+                }
+                className="navbar-button">
+                {isEducator ? 'Educator Dashboard' : 'Become Educator'}
+              </button>
+              
               <span>|</span>
               <Link to={"/my-enrollments"} className="navbar-link">
                 My Enrollments
