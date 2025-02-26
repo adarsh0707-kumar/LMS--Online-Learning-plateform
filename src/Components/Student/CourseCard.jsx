@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 import "./CourseCard.css"; // Import the CSS file
 
 const CourseCard = ({ course }) => {
-  const { currency } = useContext(AppContext);
+
+
+  const { currency, calculateRating } = useContext(AppContext);
 
   return (
     <Link
@@ -26,23 +28,23 @@ const CourseCard = ({ course }) => {
         <p className="educator-name">{course.educator.name}</p>
 
         <div className="rating-container">
-          <p>4.5</p>
+          <p>{ calculateRating(course) }</p>
           <div className="stars">
             {[...Array(5)].map((_, i) => (
               <img
                 className="star"
                 key={i}
-                src={assets.star}
+                src={i < Math.floor(calculateRating(course)) ? assets.star : assets.star_blank}
                 alt="Star"
               />
             ))}
           </div>
-          <p className="rating-count">22</p>
+          <p className="rating-count">{course.courseRatings.length}</p>
         </div>
 
         <p className="course-price">
           {currency}
-          {(course.coursePrise - (course.discount * course.coursePrise) / 100).toFixed(2)}
+          {(course.coursePrice - course.discount * course.coursePrice / 100).toFixed(2)}
         </p>
       </div>
     </Link>
